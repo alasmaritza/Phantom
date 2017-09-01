@@ -1,0 +1,28 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: white;
+}
+
+.footer .text-muted {
+  text-align: center;
+}
+
+.next-quote {
+  color: red;
+  font-family: '20_dbregular';
+  font-size: 20px;
+}

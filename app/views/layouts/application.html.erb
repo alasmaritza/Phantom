@@ -9,23 +9,40 @@
   </head>
 
   <body>
-  <header class="row">
-  <div class="col-3">
-  <div class='container'>
-  <div class='bg'></div>
-  <span class='logo'>Phantom</span>
-</div>
-  </div>
-  <div class="col-4">
-  <h2 class="slogan">Iron Maiden's gonna get all of you.</h2>
-  </div>
-  <div class="col-5 links">
-  <%= link_to 'Contribute', '#' %>
-  <%= link_to 'About', '#' %>
-  </div>
-  </header>
+    <header class="row">
+      <div class="col-3">
+      <div class='container'>
+        <div class='bg'></div>
+          <span class='logo'>Phantom</span>
+      </div>
+      </div>
+    <div class="col-4">
+      <h2 class="slogan">Iron Maiden's gonna get all of you.</h2>
+    </div>
+    <div class="col-5 links">
+      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'About', '#' %>
+    </div>
+    </header>
   <hr>
   <br class="clear" />
-    <%= yield %>
+    <div class="conainer">
+      <%= yield %>
+    </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+      <div class="col-6 text-muted">
+        <%= link_to "This isn't enough, I need more.", "#", class: 'next-quote' %>
+        </div>
+        <!--<div class="col-6 text-muted">
+        "Life is just a bowl of All-Bran" - Small Faces
+        </div>-->
+        <div class="col-6 text-muted footer-blurb">
+        Developed by Maritza Alas 2017
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
