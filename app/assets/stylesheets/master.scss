@@ -3,3 +3,70 @@
 .clear {
   clear: both;
 }
+
+.slogan {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Bakersville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow";
+  font-style: italic;
+  padding-top: 26px;
+}
+
+.links {
+  padding-top: 26px;
+}
+.links a {
+  color: white;
+  font-size: 25px;
+  border-bottom: 1px solid;
+}
+
+header {
+  border-top: 9px solid #222222;
+}
+
+hr {
+  clear:both;
+  border-color: #222222;
+}
+
+/* Logo */
+html,body { height:100%; background:rgb(20,20,20); }
+.container { position:relative; height: 0; padding-bottom: 100%; }
+.logo {
+  position:absolute;
+  top:37.5%; left:50%;
+  font-size:30px;
+  font-family: 'Rock Salt', cursive;
+  transform:translateX(-50%) translateY(-50%) rotate(-5deg);
+}
+.bg {
+  position:absolute;
+  top:50%; left:50%;
+  margin-top:-25%; margin-left:-12.5%;
+  height:25%; width:25%;
+  background:white;
+  border-radius:50%;  
+  box-shadow: 0 -7px 0 0 #10B95F, 0  7px 0 0 #FA0578;
+}
+.bg:before {
+  content:'';
+  width:110%; height:110%;
+  margin-left:-5%; margin-top:-5%;
+  transform:rotate(45deg);
+  position:absolute;
+  -webkit-animation:rotate 1.5s ease-in-out infinite;
+  outline:2px solid #10B95F; 
+}
+.bg:after { 
+  content:''; 
+  width:117%; height:117%; 
+  margin-left:-8.5%; margin-top:-8.5%;
+  position:absolute;
+  transform:rotate(45deg);
+  -webkit-animation:rotate 1.5s cubic-bezier(.5,0,.5,1) infinite;
+  outline:2px solid #FA0578; 
+}
+@keyframes rotate {100% { transform:rotateY(180deg) rotate(45deg); } }
+
+@media (min-width:1500px) { .logo { font-size:40px; } }
+@media (max-width:1100px) { .logo { font-size:20px; } }
+@media (max-width:700px) { .logo { font-size:15px; } }
