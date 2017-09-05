@@ -18,12 +18,13 @@
       </div>
       <% end %>
       </div>
-    <div class="col-4">
+    <div class="col col-4 hidden-xs-down">
       <h2 class="slogan">Iron Maiden's gonna get all of you.</h2>
     </div>
-    <div class="col-5 links">
+    <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
     <!--<button type="button" class="btn" data-toggle="modal" data-target="#myModal">Launch Demo Modal</button>-->
       <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: "#myModal"} %>
+      &nbsp;&nbsp;
       <%= link_to 'About', about_path %>
     </div>
     </header>
@@ -40,8 +41,9 @@
           </div>
           <div class="modal-body">
             <%= simple_form_for Quote.new do |f| %>
-  <%= f.input :saying %>
-  <%= f.input :author %>
+  <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "Fear is the disease. Hustle is the antidote." %>
+  <br />
+  <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Travis Kalanick" %>
   
   
           </div>
@@ -66,13 +68,13 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-      <div class="col-6 text-muted">
+      <div class="col-6 col-sm-6 text-muted">
         <%= link_to "This isn't enough, I need more.", "root_path", class: 'next-quote' %>
         </div>
         <!--<div class="col-6 text-muted">
         "Life is just a bowl of All-Bran" - Small Faces
         </div>-->
-        <div class="col-6 text-muted footer-blurb">
+        <div class="col-6 col-sm-6 text-muted footer-blurb">
         Developed by Maritza Alas 2017
         </div>
       </div>
